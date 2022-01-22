@@ -8,7 +8,7 @@ window = Tk()
 window.title(title)
 window.geometry(str(sizeX) + "x" + str(sizeY))
 windowFrame = ttk.Frame(window)
-entry = ttk.Entry(windowFrame)
+entry = ttk.Entry(windowFrame, width=theWidth)
 entry.insert(0, entryHint)
 labels = []
 
@@ -31,7 +31,7 @@ def onOkButtonClick():
     registerLabel(label)
 
 
-okButton = ttk.Button(windowFrame, text=buttonTxt,
+okButton = ttk.Button(windowFrame, width=theWidth, text=buttonTxt,
                       command=onOkButtonClick)
 
 
