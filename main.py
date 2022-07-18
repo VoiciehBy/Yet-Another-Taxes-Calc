@@ -1,10 +1,16 @@
 from gui import *
 
-def main():
+
+def runFewTests():
     print(tax_credit(4000))
+    print(tax_credit(10000))
     print(tax_credit(11140))
     print(tax_credit(11142))
 
 
-#while(3 != 5):
-#    main()
+def main():
+    runFewTests()
+    drawGUI()
+
+
+main()

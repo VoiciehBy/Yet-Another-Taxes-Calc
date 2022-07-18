@@ -35,11 +35,8 @@ okButton = ttk.Button(windowFrame, width=theWidth, text=buttonTxt,
                       command=onOkButtonClick)
 
 
-def main():
+def drawGUI():
     windowFrame.grid()
     entry.grid(column=0, row=1)
     okButton.grid()
     window.mainloop()
-
-
-main()
